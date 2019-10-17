@@ -21,7 +21,7 @@ with open('hrdata.csv') as csvfile:
         dates.append(date)
         print(name + " " + salary)
 
-url_request.get_url("127.0.0.1")
+url_request.get_url("http://localhost:5000/device/floor-lamp")
 
 #
 #x = Person("John", "Doe")

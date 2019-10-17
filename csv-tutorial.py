@@ -1,6 +1,6 @@
 import pandas as pd
 import csv
-import url-request
+import url_request
 
 df = pd.read_csv("hrdata.csv")
 #df[['Name','Salary']].head()
@@ -21,7 +21,7 @@ with open('hrdata.csv') as csvfile:
         dates.append(date)
         print(name + " " + salary)
 
-url-request.get_url("127.0.0.1")
+url_request.get_url("127.0.0.1")
 
 #x = Person("John", "Doe")
 #x.printname()

@@ -13,5 +13,3 @@ def post_url(api_url, json_data):
     r = requests.post(url = api_url, data = json_data)
     pastebin_url = r.text
     print("The Pastebin URL is:%s"%pastebin_url)
-
-curl -H "Content-type: application/json" -X POST http://localhost:5000/devices -d ''

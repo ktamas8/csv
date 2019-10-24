@@ -21,10 +21,10 @@ with open('hrdata.csv') as csvfile:
         dates.append(date)
         print(name + " " + salary)
 
-post_data="{ "identifier": "floor-lamp4", "name": "Floor Lamp5", "device_type": "switch", "controller_gateway": "192.168.0.5" }"
+post_data="{ "identifier": "floor-lamp6", "name": "Floor Lamp6", "device_type": "switch", "controller_gateway": "192.168.0.6" }"
 
 url_request.get_url("http://localhost:5000/device/floor-lamp")
-url_request.put_url("http://localhost:5000/device/floor-lamp", post_data)
+url_request.post_url("http://localhost:5000/devices", post_data)
 
 #x = Person("John", "Doe")
 #x.printname()

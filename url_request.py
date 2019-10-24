@@ -9,8 +9,8 @@ def get_url(api_url):
     gw = data['data']['controller_gateway']
     print(gw)
 
-def post_url(api_url, data):
-    r = requests.post(url = api_url, data = data)
+def post_url(api_url, json_data):
+    r = requests.post(url = api_url, data = json_data)
     pastebin_url = r.text
     print("The Pastebin URL is:%s"%pastebin_url)
 
